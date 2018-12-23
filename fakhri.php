@@ -42,7 +42,11 @@ Mencari Angka Yang Besar.</strong>
 <p>
 <label name="varc">Variable C : <label><input type="text" name="varC" id="varC"></input>
 <p>
-<input type="submit" name="submit" id="submit" value="Silahkan di Cek :)">
+<input type="submit" name="submit" id="submit" value="Hasil nilai besar">
+<p name="a">Variable a= </p>
+<p name="b">Variable b= </p>
+<p name="c">Variable c= </p>
+<p name="hasil">Variable nilai terbesar adalah = </p>
 </form>
 </body>
 </html>
@@ -52,5 +56,10 @@ $varA=$_POST['varA'];
 $varB=$_POST['varB'];
 $varC=$_POST['varC'];
 
-echo max($varA,$varB,$varC);
+$a= 9;
+$b= 15;
+$c= 7;
+
+echo max($varA,$varB,$varC)."<br>";
+echo max($a,$b,$c);
 ?>
