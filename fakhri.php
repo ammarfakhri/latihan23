@@ -33,8 +33,8 @@ input {
 </style>
 <body class="VAR">
 <form method="post">
-<p id="judul"><strong>
-Mencari Angka Yang Besar.</strong>
+<p id="judul">
+<strong>Mencari Angka Yang Besar.</strong>
 </p>
 <label name="varA">Variable A : <label><input type="text" name="varA" id="varA"></input>
 <p>
@@ -42,11 +42,7 @@ Mencari Angka Yang Besar.</strong>
 <p>
 <label name="varc">Variable C : <label><input type="text" name="varC" id="varC"></input>
 <p>
-<input type="submit" name="submit" id="submit" value="Hasil nilai besar">
-<p name="a">Variable a= </p>
-<p name="b">Variable b= </p>
-<p name="c">Variable c= </p>
-<p name="hasil">Variable nilai terbesar adalah = </p>
+<input type="submit" name="submit" id="submit" value="Hasil Nilai Besar.."></input>
 </form>
 </body>
 </html>
@@ -56,10 +52,12 @@ $varA=$_POST['varA'];
 $varB=$_POST['varB'];
 $varC=$_POST['varC'];
 
-$a= 9;
-$b= 15;
-$c= 7;
+echo "
+<p>Variable a= $varA</p>
+<p>Variable b= $varB</p>
+<p>Variable c= $varC</p>
+<a>Variable nilai terbesar adalah = </a>";
 
-echo max($varA,$varB,$varC)."<br>";
-echo max($a,$b,$c);
+echo max($varA,$varB,$varC);
+
 ?>
